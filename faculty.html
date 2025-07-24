@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty - IT Department - PDEA's College of Engineering, Manjari</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">PDEA IT Dept.</a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="faculty.html" class="active">Faculty</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1920x400/6B0000/FFFFFF?text=Our+Faculty') no-repeat center center/cover; height: 400px; padding: 100px 0;">
+        <div class="hero-content">
+            <h1>Meet Our Esteemed Faculty</h1>
+            <p>Dedicated educators and researchers guiding the next generation of IT professionals.</p>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="faculty-section section-padding">
+        <div class="container">
+            <h2>Department Faculty Members</h2>
+            <div class="faculty-grid">
+                <!-- Dummy Faculty Card 1 -->
+                <div class="faculty-card">
+                    <img src="https://placehold.co/300x250/800000/FFFFFF?text=Prof.+Sharma" alt="Professor Anil Sharma">
+                    <h3>Prof. Anil Sharma</h3>
+                    <p>Head of Department, AI & Machine Learning Specialist</p>
+                    <a href="#" class="btn btn-small">View Profile</a>
+                </div>
+                <!-- Dummy Faculty Card 2 -->
+                <div class="faculty-card">
+                    <img src="https://placehold.co/300x250/800000/FFFFFF?text=Dr.+Priya" alt="Dr. Priya Singh">
+                    <h3>Dr. Priya Singh</h3>
+                    <p>Associate Professor, Cybersecurity Expert</p>
+                    <a href="#" class="btn btn-small">View Profile</a>
+                </div>
+                <!-- Dummy Faculty Card 3 -->
+                <div class="faculty-card">
+                    <img src="https://placehold.co/300x250/800000/FFFFFF?text=Mr.+Rajesh" alt="Mr. Rajesh Kumar">
+                    <h3>Mr. Rajesh Kumar</h3>
+                    <p>Assistant Professor, Web Development Lead</p>
+                    <a href="#" class="btn btn-small">View Profile</a>
+                </div>
+                <!-- Dummy Faculty Card 4 -->
+                <div class="faculty-card">
+                    <img src="https://placehold.co/300x250/800000/FFFFFF?text=Ms.+Neha" alt="Ms. Neha Gupta">
+                    <h3>Ms. Neha Gupta</h3>
+                    <p>Lecturer, Database Management Systems</p>
+                    <a href="#" class="btn btn-small">View Profile</a>
+                </div>
+                <!-- Dummy Faculty Card 5 -->
+                <div class="faculty-card">
+                    <img src="https://placehold.co/300x250/800000/FFFFFF?text=Dr.+Vikram" alt="Dr. Vikram Rao">
+                    <h3>Dr. Vikram Rao</h3>
+                    <p>Professor, Cloud Computing Architect</p>
+                    <a href="#" class="btn btn-small">View Profile</a>
+                </div>
+                <!-- Dummy Faculty Card 6 -->
+                <div class="faculty-card">
+                    <img src="https://placehold.co/300x250/800000/FFFFFF?text=Ms.+Smita" alt="Ms. Smita Joshi">
+                    <h3>Ms. Smita Joshi</h3>
+                    <p>Assistant Professor, Mobile App Development</p>
+                    <a href="#" class="btn btn-small">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 IT Department, PDEA's College of Engineering, Manjari. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile navigation toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            menuToggle.classList.toggle('open');
+        });
+
+        // Close nav menu when a link is clicked (for mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('open')) {
+                    navLinks.classList.remove('open');
+                    menuToggle.classList.remove('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

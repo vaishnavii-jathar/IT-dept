@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Department - PDEA's College of Engineering, Manjari</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">PDEA IT Dept.</a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Innovate. Code. Excel.</h1>
+            <p>Empowering the next generation of IT leaders and innovators.</p>
+            <a href="about.html" class="btn">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section section-padding">
+        <div class="container intro-grid">
+            <div class="intro-text">
+                <h2>Welcome to the Department of Information Technology</h2>
+                <p>The IT Department at PDEA's College of Engineering, Manjari, is a hub of innovation and learning. We are dedicated to providing a comprehensive education in cutting-edge technologies, fostering a strong coding culture, and preparing students for the dynamic challenges of the global IT industry. Our programs emphasize practical skills, research, and problem-solving, ensuring our graduates are well-equipped to drive technological advancements.</p>
+                <p>With state-of-the-art laboratories, experienced faculty, and a vibrant student community, we strive for excellence in every aspect of IT education. Join us to explore the endless possibilities in the world of information technology.</p>
+            </div>
+            <div class="intro-image">
+                <img src="OIP.jpg" alt="IT Department Building">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links-section section-padding">
+        <div class="container">
+            <h2>Quick Links</h2>
+            <div class="quick-links-grid">
+                <div class="quick-link-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Our Labs</h3>
+                    <p>Explore our advanced laboratories and research facilities.</p>
+                    <a href="about.html#labs" class="btn btn-small">View Labs</a>
+                </div>
+                <div class="quick-link-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Student Clubs</h3>
+                    <p>Engage with CodeX, ITSA, and other vibrant student communities.</p>
+                    <a href="about.html#clubs" class="btn btn-small">Join Clubs</a>
+                </div>
+                <div class="quick-link-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Courses Offered</h3>
+                    <p>Discover our diverse range of undergraduate and postgraduate courses.</p>
+                    <a href="courses.html" class="btn btn-small">See Courses</a>
+                </div>
+                <div class="quick-link-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Our Faculty</h3>
+                    <p>Meet the distinguished faculty guiding our students.</p>
+                    <a href="faculty.html" class="btn btn-small">Meet Faculty</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 IT Department, PDEA's College of Engineering, Manjari. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile navigation toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            menuToggle.classList.toggle('open');
+        });
+
+        // Close nav menu when a link is clicked (for mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('open')) {
+                    navLinks.classList.remove('open');
+                    menuToggle.classList.remove('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

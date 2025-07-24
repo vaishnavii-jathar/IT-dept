@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IT Department - PDEA's College of Engineering, Manjari</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">PDEA IT Dept.</a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1920x400/6B0000/FFFFFF?text=Contact+Us') no-repeat center center/cover; height: 400px; padding: 100px 0;">
+        <div class="hero-content">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Reach out to the IT Department.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding">
+        <div class="container">
+            <h2>Contact Our Department</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Reach Us Directly</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> PDEA's College of Engineering, Manjari (Bk.), Pune - 412307</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 1234 567890</p>
+                    <p><i class="fas fa-envelope"></i> itdept@pdeacoem.ac.in</p>
+                    <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <div style="margin-top: 30px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.720847146039!2d73.9610993148937!3d18.5401349873998!2m3!1f0!2m2!1f0!2f0!3m3!1f0!2m2!1f0!2f0!4f13.1!3m3!1m2!1s0x3bc2c12b7f3b7b7b%3A0x8f2b7b7b7b7b7b7b!2sPDEA's%20College%20of%20Engineering%2C%20Manjari!5e0!3m2!1sen!2sin!4v1678901234567!5m2!1sen!2sin" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form card">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 IT Department, PDEA's College of Engineering, Manjari. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile navigation toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            menuToggle.classList.toggle('open');
+        });
+
+        // Close nav menu when a link is clicked (for mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('open')) {
+                    navLinks.classList.remove('open');
+                    menuToggle.classList.remove('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
