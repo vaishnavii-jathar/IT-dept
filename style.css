@@ -223,12 +223,15 @@ img {
 
 
 /* Hero Section */
+
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1920x800/6B0000/FFFFFF?text=College+Building') no-repeat center center/cover;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('pdeacampuss.jpg') no-repeat center center / cover;
     color: var(--white);
     text-align: center;
-    padding: 150px 0;
-    height: 600px; /* Fixed height for hero */
+    padding: 150px 20px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
