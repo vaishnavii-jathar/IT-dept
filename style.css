@@ -341,8 +341,8 @@ img {
     background-color: var(--white);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0; /* Initial state for animation */
-    transform: translateY(20px);
+    opacity: 1;
+    transform: translateY(0);
     /* Animation applied via JavaScript for staggered effect on scroll */
 }
 
